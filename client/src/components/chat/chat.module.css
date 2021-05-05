@@ -1,0 +1,48 @@
+.chat {
+	height: 100%;
+	position: relative;
+}
+
+.topbar {
+	@apply flex justify-between items-center text-white p-4 shadow-md bg-indigo-700;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+.name {
+	@apply flex;
+}
+.message {
+	@apply m-3;
+	max-width: 700px;
+}
+.parts {
+	@apply rounded-2xl m-5 p-2 w-9/12 text-white;
+}
+.form {
+	@apply w-full relative border bg-white rounded-3xl p-2 m-auto relative mb-3;
+	width: 96%;
+}
+.input {
+	@apply bg-none px-4;
+	width: 100%;
+	outline: none;
+	border: none;
+	padding-right: 30px;
+	padding-left: 27px;
+}
+.button {
+	position: absolute;
+	right: 10px;
+	outline: none;
+	border: none;
+	box-shadow: none;
+	outline-style: none;
+	color: blue;
+}
+.emoji {
+	position: absolute;
+	color: blue;
+}

@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import userAction from './user/action';
-import chatAction from './chat/action';
+import userAction from './user/reducer';
+import chatAction from './chat/reducer';
 
 const rootReducer = combineReducers({
 	user: userAction,

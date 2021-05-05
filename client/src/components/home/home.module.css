@@ -1,0 +1,22 @@
+.home {
+	background-image: url('../../images/bg-blob.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 30px;
+}
+.lead {
+	@apply flex justify-center items-center mb-10 text-white font-bold;
+	font-size: calc(4vw + 10px);
+}
+.col {
+	@apply flex justify-center items-center flex-col sm:flex-row;
+}
+.link {
+	@apply flex justify-center items-center m-2 p-2 text-white rounded-md bg-indigo-700 hover:bg-indigo-600 transition-all w-60;
+	box-shadow: 0 0 3px #ffffff;
+}

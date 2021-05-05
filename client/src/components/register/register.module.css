@@ -1,0 +1,13 @@
+.register {
+	@apply flex flex-col justify-center items-center;
+}
+.lead {
+	@apply text-white text-2xl mb-4;
+}
+
+.input {
+	@apply flex flex-col justify-center items-center m-4 rounded-md w-72 h-10 p-3;
+}
+.submit {
+	@apply flex flex-col justify-center items-center rounded-md h-10 p-3 m-auto bg-red-400 text-white;
+}

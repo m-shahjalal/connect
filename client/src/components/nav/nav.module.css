@@ -1,0 +1,81 @@
+.nav {
+	@apply bg-indigo-700;
+	position: relative;
+	z-index: 199;
+}
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo {
+	@apply font-semibold text-xl text-white pl-3;
+}
+
+.navItems {
+	position: relative;
+	transition: all 0.5s ease-in-out;
+}
+
+.list {
+	@apply bg-indigo-700 w-full pb-4 border-t-2 md:border-t-0 flex flex-col md:flex-row pt-3;
+	transition: all 0.5s ease-in-out;
+}
+
+.item {
+	@apply text-white p-3 px-6;
+}
+
+.link:hover {
+	transform: scale(0.1);
+}
+
+/* animation hamburger menu css */
+.menuBtn {
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 40px;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+	border: 1px solid #fff;
+	box-shadow: 0 0 5px rgba(255, 255, 255, 0.473);
+	border-radius: 4px;
+}
+.menuBtnBurger {
+	width: 24px;
+	height: 3px;
+	background: #fff;
+	border-radius: 5px;
+	transition: all 0.5s ease-in-out;
+}
+.menuBtnBurger::before,
+.menuBtnBurger::after {
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 3px;
+	background: #fff;
+	border-radius: 5px;
+	transition: all 0.5s ease-in-out;
+}
+.menuBtnBurger::before {
+	transform: translateY(-10px);
+}
+.menuBtnBurger::after {
+	transform: translateY(10px);
+}
+/* ANIMATION */
+.menuBtn.open .menuBtnBurger {
+	transform: translateX(-50px);
+	background: transparent;
+	box-shadow: none;
+}
+.menuBtn.open .menuBtnBurger::before {
+	transform: rotate(45deg) translate(35px, -35px);
+}
+.menuBtn.open .menuBtnBurger::after {
+	transform: rotate(-45deg) translate(35px, 35px);
+}
