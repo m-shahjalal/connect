@@ -8,6 +8,10 @@
 .input {
 	@apply flex flex-col justify-center items-center m-4 rounded-md w-72 h-10 p-3;
 }
+.link {
+	@apply text-white w-full text-center flex flex-col justify-center items-center pb-2 text-sm;
+}
 .submit {
-	@apply flex flex-col justify-center items-center rounded-md h-10 p-3 m-auto bg-red-400 text-white;
+	@apply flex flex-col justify-center items-center rounded-md h-10 p-3 m-auto bg-red-400 text-white cursor-pointer hover:bg-indigo-800;
+	line-height: 0;
 }

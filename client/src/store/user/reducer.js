@@ -2,7 +2,7 @@ import { SUCCESS, GET_USER, FAILURE } from './action';
 
 const initialState = {
 	loading: true,
-	user: [],
+	user: {},
 	error: null,
 };
 
@@ -23,7 +23,7 @@ const userReducer = (state = initialState, action) => {
 		case FAILURE:
 			return {
 				...state,
-				user: [],
+				user: {},
 				loading: false,
 				error: action.payload,
 			};
