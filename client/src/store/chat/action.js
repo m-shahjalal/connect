@@ -1,26 +1,13 @@
 export const CHAT_FETCH = 'CHAT_FETCH';
-export const SUCCESS = 'SUCCESS';
-export const FAILURE = 'FAILURE';
+export const CHAT_SUCCESS = 'CHAT_SUCCESS';
+export const CHAT_FAILURE = 'CHAT_FAILURE';
 
 const actions = {};
 
-actions.fetchChat = () => {
-	return {
-		type: CHAT_FETCH,
-	};
-};
-
 actions.fetchChatSuccess = (users) => {
 	return {
-		type: SUCCESS,
+		type: CHAT_FETCH,
 		payload: users,
-	};
-};
-
-actions.fetchChatFailure = (error) => {
-	return {
-		type: FAILURE,
-		payload: error,
 	};
 };
 

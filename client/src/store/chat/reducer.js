@@ -1,4 +1,4 @@
-import { CHAT_FETCH, SUCCESS, FAILURE } from './action';
+import { CHAT_FETCH, CHAT_FAILURE, CHAT_SUCCESS } from './action';
 
 const initialState = {
 	loading: true,
@@ -13,13 +13,13 @@ const userReducer = (state = initialState, action) => {
 				...state,
 				loading: true,
 			};
-		case SUCCESS:
+		case CHAT_SUCCESS:
 			return {
 				...state,
 				loading: false,
 				chat: action.payload,
 			};
-		case FAILURE:
+		case CHAT_FAILURE:
 			return { ...state, loading: false, error: action.payload };
 		default:
 			return state;
